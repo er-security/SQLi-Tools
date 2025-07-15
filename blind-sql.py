@@ -9,8 +9,8 @@ extracted_password = ""
 max_password_length = 32  # 適宜変更
 error_string = "This user exists." # エラー文字列をここに
 
-auth_user = "natas15"               # Basic認証用のユーザ名
-auth_pass = "yourpassword"          # Basic認証用のパスワード
+auth_user = "username"               # Basic認証用のユーザ名
+auth_pass = "password"          # Basic認証用のパスワード
 
 use_auth = bool(auth_user and auth_pass)
 
